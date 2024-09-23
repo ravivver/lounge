@@ -1,0 +1,47 @@
+html,
+body {
+  background: #101010;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.grupo {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 300ms;
+  display: flex;
+  flex-direction: column;
+}
+a:hover {
+  color: #4692ff;
+}
+a > div {
+  width: 0;
+  height: 3px;
+  transition: 300ms;
+  background: linear-gradient(
+    90deg,
+    rgba(70, 146, 255, 1) 0%,
+    rgba(70, 146, 255, 0) 100%
+  );
+}
+
+a:hover > div {
+  width: 2rem;
+}
